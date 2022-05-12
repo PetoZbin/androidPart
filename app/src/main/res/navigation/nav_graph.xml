@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/loginFragment3">
+    <fragment
+        android:id="@+id/loginFragment3"
+        android:name="com.example.orienteering.userAccess.onboarding.LoginFragment"
+        android:label="fragment_login"
+        tools:layout="@layout/fragment_login" >
+        <action
+            android:id="@+id/action_loginFragment3_to_registerFragment5"
+            app:destination="@id/registerFragment5" />
+        <action
+            android:id="@+id/action_loginFragment3_to_wrappingFragment2"
+            app:destination="@id/wrappingFragment2"
+            app:popUpTo="@id/wrappingFragment2"
+            app:popUpToInclusive="true"
+            app:launchSingleTop="true" />
+        <action
+            android:id="@+id/action_loginFragment3_to_acountChooserFragment"
+            app:destination="@id/acountChooserFragment"
+            app:popUpTo="@id/acountChooserFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/registerFragment5"
+        android:name="com.example.orienteering.userAccess.onboarding.RegisterFragment"
+        android:label="fragment_register"
+        tools:layout="@layout/fragment_register" >
+        <action
+            android:id="@+id/action_registerFragment5_to_loginFragment3"
+            app:destination="@id/loginFragment3"
+            app:popUpTo="@id/loginFragment3"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/wrappingFragment2"
+        android:name="com.example.orienteering.wrappers.WrappingFragment"
+        android:label="fragment_wrapping"
+        tools:layout="@layout/fragment_wrapping" >
+        <action
+            android:id="@+id/action_wrappingFragment2_to_loginFragment3"
+            app:destination="@id/loginFragment3"
+            app:popUpTo="@id/loginFragment3"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_wrappingFragment2_to_acountChooserFragment"
+            app:destination="@id/acountChooserFragment" />
+        <action
+            android:id="@+id/action_wrappingFragment2_to_pickWaypointsFragment"
+            app:destination="@id/pickWaypointsFragment"
+            app:popUpTo="@id/wrappingFragment2"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_wrappingFragment2_to_compPreviewFragment"
+            app:destination="@id/compPreviewFragment" />
+        <action
+            android:id="@+id/action_wrappingFragment2_to_resultDetailFragment"
+            app:destination="@id/resultDetailFragment"
+            app:popUpToInclusive="false" />
+
+    </fragment>
+    <fragment
+        android:id="@+id/acountChooserFragment"
+        android:name="com.example.orienteering.userAccess.accountPicker.AcountChooserFragment"
+        android:label="fragment_acount_chooser"
+        tools:layout="@layout/fragment_acount_chooser" >
+        <action
+            android:id="@+id/action_acountChooserFragment_to_loginFragment3"
+            app:destination="@id/loginFragment3"
+            app:popUpTo="@id/loginFragment3"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_acountChooserFragment_to_accountAddingFragment"
+            app:destination="@id/accountAddingFragment" />
+        <action
+            android:id="@+id/action_acountChooserFragment_to_wrappingFragment2"
+            app:destination="@id/wrappingFragment2"
+            app:popUpTo="@id/wrappingFragment2"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/accountAddingFragment"
+        android:name="com.example.orienteering.userAccess.accountAdding.AccountAddingFragment"
+        android:label="fragment_account_adding"
+        tools:layout="@layout/fragment_account_adding" >
+        <action
+            android:id="@+id/action_accountAddingFragment_to_acountChooserFragment"
+            app:destination="@id/acountChooserFragment"
+            app:popUpTo="@id/acountChooserFragment"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_accountAddingFragment_to_loginFragment3"
+            app:destination="@id/loginFragment3" />
+        <action
+            android:id="@+id/action_accountAddingFragment_to_encKeySetupFragment"
+            app:destination="@id/encKeySetupFragment"
+            app:popUpToInclusive="false" />
+    </fragment>
+    <fragment
+        android:id="@+id/pickWaypointsFragment"
+        android:name="com.example.orienteering.nfts.nftToCompetition.PickWaypointsFragment"
+        android:label="fragment_pick_waypoints"
+        tools:layout="@layout/fragment_pick_waypoints" >
+        <action
+            android:id="@+id/action_pickWaypointsFragment_to_wrappingFragment2"
+            app:destination="@id/wrappingFragment2"
+            app:popUpTo="@id/wrappingFragment2"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_pickWaypointsFragment_to_compSummaryFragment"
+            app:destination="@id/compSummaryFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/compSummaryFragment"
+        android:name="com.example.orienteering.nfts.nftToCompetition.compSummary.CompSummaryFragment"
+        android:label="fragment_comp_summary"
+        tools:layout="@layout/fragment_comp_summary" >
+        <action
+            android:id="@+id/action_compSummaryFragment_to_pickWaypointsFragment"
+            app:destination="@id/pickWaypointsFragment"
+            app:popUpTo="@id/pickWaypointsFragment"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_compSummaryFragment_to_wrappingFragment2"
+            app:destination="@id/wrappingFragment2"
+            app:popUpTo="@id/wrappingFragment2"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/compPreviewFragment"
+        android:name="com.example.orienteering.competition.competitionPreview.CompPreviewFragment"
+        android:label="fragment_comp_preview"
+        tools:layout="@layout/fragment_comp_preview" >
+        <action
+            android:id="@+id/action_compPreviewFragment_to_wrappingFragment2"
+            app:destination="@id/wrappingFragment2"
+            app:popUpTo="@id/wrappingFragment2"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_compPreviewFragment_to_waypointMapviewFragment"
+            app:destination="@id/waypointMapviewFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/waypointMapviewFragment"
+        android:name="com.example.orienteering.competition.competitionPreview.otherPreviews.WaypointMapviewFragment"
+        android:label="fragment_waypoint_mapview"
+        tools:layout="@layout/fragment_waypoint_mapview" >
+        <action
+            android:id="@+id/action_waypointMapviewFragment_to_compPreviewFragment"
+            app:destination="@id/compPreviewFragment"
+            app:popUpTo="@id/compPreviewFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/resultDetailFragment"
+        android:name="com.example.orienteering.results.detail.ResultDetailFragment"
+        android:label="fragment_result_detail"
+        tools:layout="@layout/fragment_result_detail" >
+        <action
+            android:id="@+id/action_resultDetailFragment_to_wrappingFragment2"
+            app:destination="@id/wrappingFragment2"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/encKeySetupFragment"
+        android:name="com.example.orienteering.userAccess.onboarding.encKeySetup.EncKeySetupFragment"
+        android:label="fragment_enc_key_setup"
+        tools:layout="@layout/fragment_enc_key_setup" >
+        <action
+            android:id="@+id/action_encKeySetupFragment_to_accountAddingFragment"
+            app:destination="@id/accountAddingFragment"
+            app:popUpTo="@id/accountAddingFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+</navigation>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <item android:id="@+id/menu_item_leaveCompetition"
+        android:title="@string/run_menu_leave"
+        app:showAsAction="never"
+        />
+
+    <item android:id="@+id/menu_item_resendWaypoint"
+        android:title="@string/resend_waypoint"
+        app:showAsAction="never"
+        />
+
+</menu>

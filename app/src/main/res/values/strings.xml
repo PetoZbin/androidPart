@@ -1,0 +1,259 @@
+<resources>
+    <string name="app_name">Orienteering</string>
+    <string name="action_settings">Settings</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+    <string name="save">Save</string>
+
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="malformed_competition_response">Malformed competition response for server</string>
+
+    //common
+    <string name="common_con_error">Server not responding</string>
+    <string name="no_net_dialog_info">Pls, check your connection</string>
+    <string name="no_net_dialog_info2">Then tap refresh</string>
+    <string name="common_refresh">Refresh</string>
+    <string name="common_app_error">Application error</string>
+
+    //login screen
+    <string name="login_heading">Please, login</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="login_btn_text">Login</string>
+    <string name="nick_hint">Your username</string>
+    <string name="password_hint">Your password</string>
+    <string name="login_common">Login</string>
+    <string name="register_common">Register</string>
+    <string name="login_getregistered_lable">New here? </string>
+    <string name="register_clickable_text">Register</string>
+    <string name="login_incorrect_password">Incorrect password</string>
+    <string name="login_incorrect_username_password">Incorrect username or password</string>
+    <string name="login_incorrect_inputs">Incorrect inputs</string>
+    <string name="login_invalid_password">Invalid password</string>
+
+    //registration code - viewmodel
+    <string name="login_logged_user_found">Logged user found!</string>
+    <string name="login_logged_message">Successfully logged in!</string>
+    <string name="login_newuser_logged_message">New user logged in!</string>
+
+    //registration page
+    <string name="register_heading">Registration</string>
+    <string name="already_reg_lable">Already registered? </string>
+    <string name="reg_privkey_lable">Private key </string>
+    <string name="reg_privkey_hint">Your account\'s private </string>
+    <string name="reg_pubkey_lable">Address</string>
+    <string name="reg_pubkey_hint">Visible after priv. key inserted </string>
+    <string name="password_again">Password again</string>
+    <string name="common_email">E-mail</string>
+    <string name="email_hint">yourmail@mail.com</string>
+    <string name="register_secret_key_label">Encryption secret key</string>
+    <string name="register_secret_key_info">Encryption key</string>
+    <string name="register_secret_key_again">Encryption key again</string>
+
+    //registration code - viewmodel
+    <string name="reg_success_msg">Registration successful</string>
+    <string name="reg_roomdb_msg">Internal database saving error!</string>
+    <string name="reg_server_msg">Server side error!</string>
+
+    //validation error msgs
+    <string name="val_incorrect_fields">Check the inputs!</string>
+    <string name="val_invalid_address">Invalid address!</string>
+    <string name="val_incorrect_enc_key">Wrong encryption key!</string>
+
+    //database
+    <string name="db_user_fetch_err">Incorrect user db fetch!</string>
+
+    //nft manager
+    <string name="nft_man_heading">NFT manager</string>
+    <string name="nft_to_be_fetched">-</string>
+    <string name="nft_man_name_label">NFT name</string>
+    <string name="nft_man_desc_label">NFT description</string>
+    <string name="nft_man_pick_label">Choose this NFT as prize</string>
+    <string name="nft_man_pick_btn">Choose</string>
+    <string name="nft_view_title">Browse your NFTs</string>
+    <string name="nft_man_server_msg">Server side error!</string>
+    <string name="nft_man_no_nfts_msg">User has no NFTs</string>
+
+    //account picker
+    <string name="acc_picker_heading">Account picker</string>
+    <string name="acc_pick_label">Pick or manage an account</string>
+    <string name="acc_picker_addAcc">Add account</string>
+    <string name="acc_picker_examle_acc">0xabcd....0f97</string>
+    <string name="acc_picker_no_accounts">You have no accounts, add one</string>
+    <string name="acc_picker_roomdb_delete_error">Internal database delete error!</string>
+
+    //account adding
+    <string name="acc_adding_heading">Add new account</string>
+    <string name="acc_adding_infotext">Insert your private key</string>
+    <string name="acc_adding_success">Account adding successful</string>
+    <string name="acc_adding_adress_used">Address already used</string>
+    <string name="acc_adding_fail">Account adding failed</string>
+    <string name="acc_adding_invalidKey">Private key invalid</string>
+    <string name="acc_adding_encrypt_infotext">Private key will be stored only internally, \n encrypted by your enc. key \n No enc. key set? click lock icon</string>
+    <string name="acc_adding_no_enc_key">No enc. key found! \n Please setup new enc key!!</string>
+
+
+
+    //encryption key adding Keys do not match!
+    <string name="enckey_setup_heading">Enc. key setup</string>
+    <string name="enckey_setup_info">Setup your secret key \n for ETH private key encryption</string>
+    <string name="enckey_label">Encryption key</string>
+    <string name="enckey_again_label">Encryption key again</string>
+    <string name="enckey_again_submit">Submit</string>
+    <string name="enckey_not_matching">Keys do not match!</string>
+    <string name="enckey_invalid">Key has to be 8 char. text with number and Uppercase char.</string>
+    <string name="enckey_already_set_errr">Key already set!!</string>
+    <string name="enckey_set">Key successfully set!!</string>
+
+    //Competitions map
+    <string name="comp_map_heading">Events map</string>
+
+    //Standings
+    <string name="standings_heading">Standings</string>
+
+    //wrapping
+    <string name="wrap_menu_chooseAcc">Change account</string>
+    <string name="wrap_menu_Logout">Log out</string>
+
+    //waypoint picker
+    <string name="way_picker_heading">Pick waypoints</string>
+    <string name="way_picker_set_label">Set waypoint</string>
+    <string name="way_picker_delete">Delete</string>
+    <string name="way_picker_edit">Edit</string>
+    <string name="way_picker_location_undefined">On the way</string>
+
+    //waypoint options dialog
+    <string name="way_picker_options_address">Thoroughfare</string>
+    <string name="way_picker_options_address_latitude">Latitude</string>
+    <string name="way_picker_options_address_longitude">Longitude</string>
+    <string name="way_picker_options_address_seq_number">Sequence number</string>
+
+    //waypoint summary
+    <string name="way_summaryomp_name_label">Competition name</string>
+    <string name="way_summary_comp_name">No name comp</string>
+    <string name="way_summary_heading">Summary</string>
+    <string name="way_summary_comp_num_label">Max number of competitors</string>
+    <string name="way_summary_comp_num_hint">Competitors limit</string>
+    <string name="way_summary_comp_main_heading">Check the waypoints</string>
+    <string name="way_summary_comp_lat_label">Lat:</string>
+    <string name="way_summary_comp_lng_label">Lng:</string>
+    <string name="way_summary_approval_heading">Approval</string>
+    <string name="way_summary_approval_pass_label">Approve by encryption key</string>
+    <string name="way_summary_approval_enckey_hint">Encryption key</string>
+    <string name="way_summary_num_comp_error">Minimum number of competitors is 2</string>
+    <string name="way_summary_datetime_label">When?</string>
+    <string name="way_summary_datetime_hint">dd.mm.rrrr hh:mm</string>
+    <string name="way_summary_max_dur_label">Max. duration (Min)</string>
+    <string name="way_summary_max_dur_hint">minutes</string>
+
+    <string name="way_summary_gasprice_error">Unable to retrieve</string>
+    <string name="way_summary_balance_error">Minimum number of competitors is 2</string>
+    <string name="way_summary_gas_price_label">Gas price (MATIC):</string>
+    <string name="way_summary_balance_label">Balance (MATIC):</string>
+    <string name="way_summary_balance_error_funds">Balance too low to transact</string>
+
+    <string name="way_summary_def_comp_name">No name run</string>
+    <string name="way_summary_add_comp_error">Unable to register the competition</string>
+    <string name="way_summary_add_comp_success">Competition registered</string>
+
+    //competition picker
+    <string name="comp_picker_heading">Pick waypoints</string>
+    <string name="comp_picker_search_hint">Search city</string>
+    <string name="comp_picker_search_address_error">Cannot decode location, try another one</string>
+    <string name="comp_picker_search_address_nocomp_error">No competitions for this locality</string>
+    <string name="comp_picker_gps_denied">Allow gps? Ori f you do not wish to be localised - use search window.</string>
+
+
+    //competition preview
+    <string name="comp_preview_countdown">Countdown</string>
+    <string name="comp_preview_join">Join</string>
+    <string name="comp_preview_give_up">Give up</string>
+    <string name="comp_preview_at_start">At start</string>
+    <string name="comp_preview_cancel">Revoke</string>
+    <string name="comp_preview_at_start_disclaimer">Tap \'At start\' in 2 min. before race to join</string>
+    <string name="comp_preview_comp_list">Competitors list</string>
+    <string name="comp_preview_show_prize">Show prize</string>
+    <string name="comp_preview_prize_heading">Prize NFT preview</string>
+    <string name="comp_preview_on_map">On map</string>
+    <string name="comp_preview_on_map_waypoints">Waypoints on map</string>
+    <string name="comp_preview_when">When?</string>
+    <string name="comp_preview_time_limit_min">Time limit (min.)</string>
+    <string name="comp_preview_competitors_joined_lable">Competitors joined</string>
+    <string name="comp_preview_competitors_joined_num">5 / 10 (max)</string>
+    <string name="comp_preview_no_comps_err">No competitions for such ID!</string>
+    <string name="comp_preview_cannot_giveup_err">Smt wrong! Cannot give up!</string>
+    <string name="comp_preview_competition_revoked">Competition revoked!</string>
+
+    //GPS tracking
+    <string name="gps_without_permission">Please allow your GPS tracking first</string>
+    <string name="gps_geocoder_address_err">Geocoder exception</string>
+    <string name="gps_map_loading_err">Google map loading error!</string>
+    <string name="gps_your_location">Your location</string>
+    <string name="gps_geocoder_no_thoroughfare">Not named point</string>
+    <string name="title_activity_run">RunActivity</string>
+    <string name="gps_your_pos">You!</string>
+
+
+    //the run - competition
+    <string name="run_main_comp_name">Competition name</string>
+    <string name="run_main_comp_fetch_error">Unable to fetch current state!!</string>
+    <string name="run_main_comp_atStart_error">Unable register at start!!</string>
+    <string name="run_main_comp_atStart_success">Registered at start!!</string>
+    <string name="run_main_comp_location_not_granted">You must allow location!!</string>
+    <string name="run_main_comp_back_location_not_granted">You must allow bckgrnd location!!</string>
+    <string name="run_notif_checkpoint_reached">Checkpoint $1 reached!</string>
+    <string name="run_notif_checkpoint_reached_last">Last checkpoint reached! Wait for results.</string>
+    <string name="run_notif_checkpoint_reached_info">Your prelim. standing: </string>
+    <string name="run_notif_comp_state_title">Comp. state changed!</string>
+    <string name="run_notif_comp_state_error">Your run had to be canceled due to system error!</string>
+    <string name="run_notif_comp_state_limit">Your run had to be canceled - time limit exceeded!</string>
+    <string name="run_notif_comp_state_quit">Your run had to be canceled - competition revoked!</string>
+    <string name="run_notif_comp_state_finalized">Competition ended! Wait for results.</string>
+    <string name="run_notif_competitor_quit_success">You have left the competition! If competition proceeds, try again!</string>
+    <string name="run_notif_competitor_quit_fail">Could not notify server, that you left! Pls, try later.</string>
+    <string name="run_menu_leave">Quit</string>
+    <string name="run_need_action">Action requested</string>
+    <string name="run_resend_info">Check your connection, open the run menu and tap RESEND!</string>
+    <string name="resend_waypoint">Resend waypoint</string>
+
+
+    //the run - info dialogues
+    <string name="run_dialog_btn">Proceed</string>
+    <string name="run_finish_dialog_heading">FINISHED</string>
+    <string name="run_finish_dialog_time">Your time</string>
+    <string name="run_finish_dialog_standing">Preliminary standing</string>
+    <string name="run_finish_dialog_award_time">Award handover at</string>
+    <string name="run_finish_dialog_comp_fetch_err">Unable to fetch result! Pls proceed.</string>
+
+    <string name="run_quit_dialog_heading">RUN ABORTED</string>
+    <string name="run_quit_dialog_disclaimer">You can try again!</string>
+    <string name="run_quit_dialog_infotext">Pls, check push notif. for reason.</string>
+
+
+    //competition result
+    <string name="results_standing_label">Your standing: </string>
+    <string name="results_winner_label">Winner</string>
+    <string name="results_winner_time">Winner\'s time</string>
+    <string name="results_fetch_error">Results fetch - server responded with error!</string>
+    <string name="results_competition_found_error">No such competition found!</string>
+    <string name="results_empty_error">No competitions yet!</string>
+    <string name="results_competition_error">Cannot fetch competition!</string>
+    <string name="resuld_detail_your_standing">Your standing</string>
+    <string name="resuld_detail_your_time">Your time</string>
+
+
+    //active competitions
+    <string name="active_comps_heading">Active competitions</string>
+    <string name="user_state_joined">JOINED</string>
+    <string name="user_state_performing">PERFORMING</string>
+    <string name="user_state_onboarding">ONBOARDING</string>
+    <string name="user_state_quit">QUIT</string>
+    <string name="user_state_organizer">ORGANIZER</string>
+
+</resources>

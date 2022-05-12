@@ -1,0 +1,376 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".results.detail.ResultDetailFragment">
+
+    <data>
+        <variable
+            name="resultDetailViewModel"
+            type="com.example.orienteering.results.detail.ResultDetailViewModel" />
+
+    </data>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/black"
+        >
+
+        <LinearLayout
+            android:id="@+id/res_detail_header_linear"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_margin="5dp"
+            android:layout_weight="0.1"
+            android:background="@drawable/round_corners_drawable"
+            android:backgroundTint="@color/custom_gray">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+                <ImageButton
+                    android:id="@+id/res_detail_back_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="15dp"
+                    android:background="@color/transparent"
+                    android:src="@drawable/ic_arrow_circle_left"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+
+                <TextView
+                    android:id="@+id/res_detail_heading"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" Result detail"
+                    android:textColor="@color/black"
+                    android:textSize="25sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/res_detail_show_prize_btn"
+                    app:layout_constraintStart_toEndOf="@+id/res_detail_back_btn"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.509" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/res_detail_show_prize_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="5dp"
+                    android:background="@drawable/round_button_style_purple"
+                    android:text="Prize"
+                    android:textColor="@color/white"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.555" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:id="@+id/waypoints_content_linear"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:background="@drawable/round_corners_workspace"
+            android:backgroundTint="@color/thistle"
+            android:layout_weight="0.9"
+            >
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/comp_sum_guideline_left"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintGuide_percent="0.05" />
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/comp_sum_guideline_right"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintGuide_percent="0.95" />
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/comp_sum_guideline_top"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    app:layout_constraintGuide_percent="0.02" />
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/comp_sum_guideline_second"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    app:layout_constraintGuide_percent="0.5" />
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/comp_sum_guideline_third"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    app:layout_constraintGuide_percent="0.96" />
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/comp_sum_guideline_fourth"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    app:layout_constraintGuide_percent="0.02" />
+
+
+                <LinearLayout
+                    android:id="@+id/res_detail_main_linear"
+                    android:layout_width="350dp"
+                    android:layout_height="320dp"
+                    android:background="@drawable/round_corners_drawable"
+                    app:layout_constraintBottom_toTopOf="@+id/comp_sum_guideline_second"
+                    app:layout_constraintEnd_toStartOf="@+id/comp_sum_guideline_right"
+                    app:layout_constraintStart_toStartOf="@+id/comp_sum_guideline_left"
+                    app:layout_constraintTop_toTopOf="@+id/comp_sum_guideline_fourth">
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/res_detail_recycler"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="8dp"
+                        android:background="@drawable/round_corners"
+                        android:scrollbars="vertical"
+                        android:scrollbarStyle="outsideOverlay"
+                        />
+
+                </LinearLayout>
+
+
+                <androidx.core.widget.NestedScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:fillViewport="true"
+                    android:scrollbars="vertical"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/comp_sum_guideline_second"
+                    android:paddingBottom="20dp"
+                    >
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="10dp"
+                        >
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/round_corners"
+                            android:backgroundTint="@color/thistle"
+                            android:scrollbarThumbVertical="@android:color/black"
+                            app:layout_constraintEnd_toStartOf="@+id/comp_sum_guideline_right"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            android:paddingBottom="5dp"
+                            >
+
+
+                            <androidx.constraintlayout.widget.Guideline
+                                android:id="@+id/comp_sum_guideline_left2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                app:layout_constraintGuide_percent="0.1" />
+
+                            <androidx.constraintlayout.widget.Guideline
+                                android:id="@+id/comp_sum_guideline_right2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                app:layout_constraintGuide_percent="0.9" />
+
+                            <TextView
+                                android:id="@+id/res_detail_your_time_label"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/run_finish_dialog_time"
+                                android:textColor="@color/dark_purple"
+                                android:textSize="20sp"
+                                android:textStyle="bold"
+                                app:layout_constraintStart_toStartOf="@+id/comp_sum_guideline_left2"
+                                app:layout_constraintTop_toTopOf="parent" />
+
+                            <TextView
+                                android:id="@+id/res_detail_your_time"
+                                android:layout_width="250dp"
+                                android:layout_height="45dp"
+                                android:layout_marginTop="10dp"
+                                android:background="@drawable/round_corners_drawable"
+                                android:ems="10"
+                                android:text="@{resultDetailViewModel.userTime}"
+                                android:gravity="center"
+                                android:textSize="18sp"
+                                android:textStyle="bold"
+                                android:textColor="@color/gray"
+                                android:padding="10dp"
+                                android:textAlignment="center"
+                                app:layout_constraintEnd_toStartOf="@+id/comp_sum_guideline_right2"
+                                app:layout_constraintHorizontal_bias="0.504"
+                                app:layout_constraintStart_toStartOf="@+id/comp_sum_guideline_left2"
+                                app:layout_constraintTop_toBottomOf="@+id/res_detail_your_time_label" />
+
+                            <TextView
+                                android:id="@+id/res_detail_your_standing_label"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="0dp"
+                                android:layout_marginTop="10dp"
+                                android:text="@string/results_standing_label"
+                                android:textColor="@color/dark_purple"
+                                android:textSize="20sp"
+                                android:textStyle="bold"
+                                app:layout_constraintStart_toStartOf="@+id/comp_sum_guideline_left2"
+                                app:layout_constraintTop_toBottomOf="@id/res_detail_your_time" />
+
+                            <TextView
+                                android:id="@+id/res_detail_your_standing"
+                                android:layout_width="250dp"
+                                android:layout_height="45dp"
+                                android:layout_marginTop="10dp"
+                                android:background="@drawable/round_corners_drawable"
+                                android:ems="10"
+                                android:padding="10dp"
+                                android:gravity="center"
+                                android:textSize="18sp"
+                                android:textStyle="bold"
+                                android:textColor="@color/gray"
+                                android:text="@{resultDetailViewModel.userPosToCompetitors}"
+                                android:textAlignment="center"
+                                app:layout_constraintEnd_toStartOf="@+id/comp_sum_guideline_right2"
+                                app:layout_constraintHorizontal_bias="0.504"
+                                app:layout_constraintStart_toStartOf="@+id/comp_sum_guideline_left2"
+                                app:layout_constraintTop_toBottomOf="@+id/res_detail_your_standing_label" />
+
+
+                            <TextView
+                                android:id="@+id/res_detail_winner_label"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:text="@string/results_winner_label"
+                                android:textColor="@color/dark_purple"
+                                android:textSize="20sp"
+                                android:textStyle="bold"
+                                app:layout_constraintStart_toStartOf="@+id/comp_sum_guideline_left2"
+                                app:layout_constraintTop_toBottomOf="@id/res_detail_your_standing" />
+
+
+                            <TextView
+                                android:id="@+id/res_detail_winner_nick"
+                                android:layout_width="250dp"
+                                android:layout_height="45dp"
+                                android:layout_marginTop="10dp"
+                                android:layout_marginBottom="10dp"
+                                android:background="@drawable/round_corners_drawable"
+                                android:ems="7"
+                                android:focusableInTouchMode="false"
+                                android:gravity="center"
+                                android:textSize="18sp"
+                                android:textStyle="bold"
+                                android:textColor="@color/gray"
+                                android:text="@{resultDetailViewModel.winnerNick}"
+                                android:textAlignment="center"
+                                app:layout_constraintEnd_toStartOf="@+id/comp_sum_guideline_right2"
+                                app:layout_constraintStart_toStartOf="@+id/comp_sum_guideline_left2"
+                                app:layout_constraintTop_toBottomOf="@+id/res_detail_winner_label" />
+
+                            <TextView
+                                android:id="@+id/res_detail_winnertime_label"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:text="@string/results_winner_time"
+                                android:textColor="@color/dark_purple"
+                                android:textSize="20sp"
+                                android:textStyle="bold"
+                                app:layout_constraintStart_toStartOf="@+id/comp_sum_guideline_left2"
+                                app:layout_constraintTop_toBottomOf="@id/res_detail_winner_nick" />
+
+
+                            <TextView
+                                android:id="@+id/res_detail_winnertime"
+                                android:layout_width="250dp"
+                                android:layout_height="45dp"
+                                android:layout_marginTop="10dp"
+                                android:layout_marginBottom="10dp"
+                                android:background="@drawable/round_corners_drawable"
+                                android:ems="7"
+                                android:gravity="center"
+                                android:textSize="18sp"
+                                android:textStyle="bold"
+                                android:textColor="@color/gray"
+                                android:text="@{resultDetailViewModel.winnerTime}"
+                                android:textAlignment="center"
+                                app:layout_constraintEnd_toStartOf="@+id/comp_sum_guideline_right2"
+                                app:layout_constraintStart_toStartOf="@+id/comp_sum_guideline_left2"
+                                app:layout_constraintTop_toBottomOf="@+id/res_detail_winnertime_label"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_goneMarginBottom="15dp"
+                                />
+
+
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    </LinearLayout>
+
+                </androidx.core.widget.NestedScrollView>
+
+
+
+
+
+
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+        </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+    </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+</layout>

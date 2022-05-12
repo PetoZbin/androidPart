@@ -1,0 +1,361 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".userAccess.onboarding.RegisterFragment"
+    >
+
+
+    <data>
+        <variable
+            name="registrationViewModel"
+            type="com.example.orienteering.userAccess.onboarding.RegistrationViewModel" />
+    </data>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/black"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.15"
+            android:background="@drawable/round_corners_drawable"
+            android:backgroundTint="@color/custom_gray"
+            android:layout_margin="5dp"
+            >
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+
+                    <TextView
+                        android:id="@+id/registerHeading"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/register_heading"
+                        android:textSize="40sp"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.85"
+            android:background="@drawable/round_corners_workspace"
+            android:layout_margin="0dp"
+            android:backgroundTint="@color/thistle"
+
+            >
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/login_guid_vert_left"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintGuide_percent="0.2" />
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/login_guid_vert_right"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintGuide_percent="0.8" />
+
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/login_input_top"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    app:layout_constraintGuide_percent="0.02" />
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/login_input_second"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    app:layout_constraintGuide_percent="0.11" />
+
+                <ImageView
+                    android:id="@+id/login_icon"
+                    android:layout_width="171dp"
+                    android:layout_height="81dp"
+                    android:src="@drawable/ic_runico"
+                    app:layout_constraintBottom_toTopOf="@+id/login_input_second"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/login_input_top" />
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/login_input_third"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    app:layout_constraintGuide_percent="0.8" />
+
+                <TextView
+                    android:id="@+id/already_reg_lable"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="@string/already_reg_lable"
+                    android:textSize="20sp"
+                    app:layout_constraintStart_toStartOf="@+id/login_guid_vert_left"
+                    app:layout_constraintTop_toTopOf="@+id/login_input_second" />
+
+                <TextView
+                    android:id="@+id/reg_login_clickable"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:text="@string/login_common"
+                    android:textColor="@color/dark_purple"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toStartOf="@+id/login_guid_vert_right"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toEndOf="@+id/already_reg_lable"
+                    app:layout_constraintTop_toTopOf="@+id/login_input_second" />
+
+                <TextView
+                    android:id="@+id/reg_nick_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:text="@string/username"
+                    android:textStyle="bold"
+                    android:textSize="18sp"
+                    android:textColor="@color/dark_purple"
+                    app:layout_constraintStart_toStartOf="@+id/login_guid_vert_left"
+                    app:layout_constraintTop_toBottomOf="@+id/already_reg_lable" />
+
+                <EditText
+                    android:id="@+id/reg_username"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:textAlignment="center"
+                    android:ems="10"
+                    android:maxLength="20"
+                    android:hint="@string/nick_hint"
+                    android:inputType="textPersonName"
+                    android:text="@={registrationViewModel.userName}"
+                    app:layout_constraintEnd_toStartOf="@+id/login_guid_vert_right"
+                    app:layout_constraintStart_toStartOf="@+id/login_guid_vert_left"
+                    app:layout_constraintTop_toBottomOf="@+id/reg_nick_label" />
+
+                <TextView
+                    android:id="@+id/reg_email_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:text="@string/common_email"
+                    android:textStyle="bold"
+                    android:textSize="18sp"
+                    android:textColor="@color/dark_purple"
+                    app:layout_constraintStart_toStartOf="@+id/login_guid_vert_left"
+                    app:layout_constraintTop_toBottomOf="@+id/reg_username" />
+
+                <EditText
+                    android:id="@+id/reg_email"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:ems="10"
+                    android:maxLength="20"
+                    android:textAlignment="center"
+                    android:hint="@string/email_hint"
+                    android:inputType="textEmailAddress"
+                    android:text="@={registrationViewModel.email}"
+                    app:layout_constraintEnd_toStartOf="@+id/login_guid_vert_right"
+                    app:layout_constraintStart_toStartOf="@+id/login_guid_vert_left"
+                    app:layout_constraintTop_toBottomOf="@+id/reg_email_label" />
+
+                <TextView
+                    android:id="@+id/reg_pass_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:textStyle="bold"
+                    android:textSize="18sp"
+                    android:textColor="@color/dark_purple"
+                    android:text="@string/password"
+                    app:layout_constraintStart_toStartOf="@+id/login_guid_vert_left"
+                    app:layout_constraintTop_toBottomOf="@+id/reg_email" />
+
+                <EditText
+                    android:id="@+id/reg_password"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:ems="10"
+                    android:inputType="textPassword"
+                    android:hint="@string/password_hint"
+                    android:textAlignment="center"
+                    android:text="@={registrationViewModel.password}"
+                    app:layout_constraintEnd_toStartOf="@+id/login_guid_vert_right"
+                    app:layout_constraintStart_toStartOf="@+id/login_guid_vert_left"
+                    app:layout_constraintTop_toBottomOf="@+id/reg_pass_label" />
+
+
+                <EditText
+                    android:id="@+id/reg_password_again"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:ems="10"
+                    android:hint="@string/password_again"
+                    android:textAlignment="center"
+                    android:inputType="textPassword"
+                    android:text="@={registrationViewModel.passwordAgain}"
+                    app:layout_constraintEnd_toStartOf="@+id/login_guid_vert_right"
+                    app:layout_constraintStart_toStartOf="@+id/login_guid_vert_left"
+                    app:layout_constraintTop_toBottomOf="@+id/reg_password" />
+
+                <TextView
+                    android:id="@+id/reg_pin_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/register_secret_key_label"
+                    android:layout_marginTop="15dp"
+                    android:textStyle="bold"
+                    android:textSize="18sp"
+                    android:textColor="@color/dark_purple"
+                    app:layout_constraintStart_toStartOf="@+id/login_guid_vert_left"
+                    app:layout_constraintTop_toBottomOf="@+id/reg_password_again" />
+
+
+                <EditText
+                    android:id="@+id/reg_pin_input"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:ems="10"
+                    android:hint="@string/register_secret_key_info"
+                    android:textAlignment="center"
+                    android:inputType="textPassword"
+                    android:text="@={registrationViewModel.encryptionKey}"
+                    app:layout_constraintEnd_toStartOf="@+id/login_guid_vert_right"
+                    app:layout_constraintStart_toStartOf="@+id/login_guid_vert_left"
+                    app:layout_constraintTop_toBottomOf="@+id/reg_pin_label" />
+
+                <EditText
+                    android:id="@+id/reg_pin_input_again"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:ems="10"
+                    android:hint="@string/register_secret_key_again"
+                    android:textAlignment="center"
+                    android:inputType="textPassword"
+                    android:text="@={registrationViewModel.encryptionKeyAgain}"
+                    app:layout_constraintEnd_toStartOf="@+id/login_guid_vert_right"
+                    app:layout_constraintStart_toStartOf="@+id/login_guid_vert_left"
+                    app:layout_constraintTop_toBottomOf="@+id/reg_pin_input" />
+
+                <TextView
+                    android:id="@+id/reg_priv_lable"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:text="@string/reg_privkey_lable"
+                    android:textColor="@color/dark_purple"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toStartOf="@+id/login_guid_vert_left"
+                    app:layout_constraintTop_toBottomOf="@+id/reg_pin_input_again" />
+
+                <EditText
+                    android:id="@+id/reg_priv_key_input"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:ems="10"
+                    android:hint="@string/reg_privkey_hint"
+                    android:textAlignment="center"
+                    android:inputType="textPersonName"
+                    android:text="@={registrationViewModel.privateKey}"
+                    app:layout_constraintEnd_toStartOf="@+id/login_guid_vert_right"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="@+id/login_guid_vert_left"
+                    app:layout_constraintTop_toBottomOf="@+id/reg_priv_lable" />
+
+                <TextView
+                    android:id="@+id/reg_public_lable"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:text="@string/reg_pubkey_lable"
+                    android:textColor="@color/dark_purple"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toStartOf="@+id/login_guid_vert_left"
+                    app:layout_constraintTop_toBottomOf="@+id/reg_priv_key_input" />
+
+                <TextView
+                    android:id="@+id/reg_address_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:maxWidth="250dip"
+                    android:singleLine="false"
+                    android:text="@={registrationViewModel.address}"
+                    android:hint="0x................................."
+                    android:textSize="18sp"
+                    android:textColor="@color/black"
+                    android:textAlignment="center"
+                    app:layout_constraintEnd_toStartOf="@+id/login_guid_vert_right"
+                    app:layout_constraintStart_toStartOf="@+id/login_guid_vert_left"
+                    app:layout_constraintTop_toBottomOf="@+id/reg_public_lable" />
+
+
+                <Button
+                    android:id="@+id/register_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="51dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="20dp"
+                    android:text="@string/register_common"
+                    android:onClick="@{() -> registrationViewModel.register()}"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/login_guid_vert_right"
+                    app:layout_constraintStart_toStartOf="@+id/login_guid_vert_left"
+                    app:layout_constraintTop_toBottomOf="@+id/reg_address_text" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+            </ScrollView>
+
+        </LinearLayout>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+</layout>
+
+

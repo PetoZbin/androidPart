@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/diplomovka/allProjects/thesis/androidPart/app/src/main/res/drawable/button_round_black.xml" value="0.22179487179487178" />
+        <entry key="..\:/diplomovka/allProjects/thesis/androidPart/app/src/main/res/drawable/button_round_green.xml" value="0.22179487179487178" />
+        <entry key="..\:/diplomovka/allProjects/thesis/androidPart/app/src/main/res/drawable/button_round_red.xml" value="0.22179487179487178" />
+        <entry key="..\:/diplomovka/allProjects/thesis/androidPart/app/src/main/res/drawable/custom_marker_shape.xml" value="0.2189873417721519" />
+        <entry key="..\:/diplomovka/allProjects/thesis/androidPart/app/src/main/res/drawable/custom_spinner.xml" value="0.2189873417721519" />
+        <entry key="..\:/diplomovka/allProjects/thesis/androidPart/app/src/main/res/drawable/ic_arrow_circle_left.xml" value="0.22179487179487178" />
+        <entry key="..\:/diplomovka/allProjects/thesis/androidPart/app/src/main/res/drawable/ic_baseline_arrow_circle_left_24.xml" value="0.22179487179487178" />
+        <entry key="..\:/diplomovka/allProjects/thesis/androidPart/app/src/main/res/drawable/ic_baseline_keyboard_arrow_left_24.xml" value="0.1858974358974359" />
+        <entry key="..\:/diplomovka/allProjects/thesis/androidPart/app/src/main/res/drawable/ic_baseline_lock_24.xml" value="0.4620253164556962" />
+        <entry key="..\:/diplomovka/allProjects/thesis/androidPart/app/src/main/res/drawable/ic_logout.xml" value="0.22179487179487178" />
+        <entry key="..\:/diplomovka/allProjects/thesis/androidPart/app/src/main/res/drawable/ic_man_arrow_left.xml" value="0.22179487179487178" />
+        <entry key="..\:/diplomovka/allProjects/thesis/androidPart/app/src/main/res/drawable/ic_man_arrow_right.xml" value="0.22179487179487178" />
+        <entry key="..\:/diplomovka/allProjects/thesis/androidPart/app/src/main/res/drawable/ic_spinner_custom_background.xml" value="0.1858974358974359" />
+        <entry key="..\:/diplomovka/allProjects/thesis/androidPart/app/src/main/res/drawable/no_fts_image.xml" value="0.1858974358974359" />
+        <entry key="..\:/diplomovka/allProjects/thesis/androidPart/app/src/main/res/drawable/round_button_nocolor.xml" value="0.22179487179487178" />
+        <entry key="..\:/diplomovka/allProjects/thesis/androidPart/app/src/main/res/drawable/round_button_style_purple.xml" value="0.22179487179487178" />
+        <entry key="..\:/diplomovka/allProjects/thesis/androidPart/app/src/main/res/drawable/round_corners.xml" value="0.15213675213675212" />
+        <entry key="..\:/diplomovka/allProjects/thesis/androidPart/app/src/main/res/drawable/round_corners_adress_background.xml" value="0.15213675213675212" />
+        <entry key="..\:/diplomovka/allProjects/thesis/androidPart/app/src/main/res/drawable/round_corners_drawable.xml" value="0.2703125" />
+        <entry key="..\:/diplomovka/allProjects/thesis/androidPart/app/src/main/res/drawable/round_corners_workspace.xml" value="0.2703125" />
+        <entry key="..\:/diplomovka/allProjects/thesis/androidPart/app/src/main/res/layout/active_competition_item.xml" value="0.264" />
+        <entry key="..\:/diplomovka/allProjects/thesis/androidPart/app/src/main/res/layout/activity_competition.xml" value="0.20854700854700856" />
+        <entry key="..\:/diplomovka/allProjects/thesis/androidPart/app/src/main/res/layout/activity_main.xml" value="0.22" />
+        <entry key="..\:/diplomovka/allProjects/thesis/androidPart/app/src/main/res/layout/activity_run2.xml" value="0.20854700854700856" />
+        <entry key="..\:/diplomovka/allProjects/thesis/androidPart/app/src/main/res/layout/adress_item.xml" value="0.22" />
+        <entry key="..\:/diplomovka/allProjects/thesis/androidPart/app/src/main/res/layout/basic_competitor_item.xml" value="0.4547008547008547" />
+        <entry key="..\:/diplomovka/allProjects/thesis/androidPart/app/src/main/res/layout/basis_result_item.xml" value="0.536" />
+        <entry key="..\:/diplomovka/allProjects/thesis/androidPart/app/src/main/res/layout/content_main.xml" value="0.25416666666666665" />
+        <entry key="..\:/diplomovka/allProjects/thesis/androidPart/app/src/main/res/layout/custom_marker_view.xml" value="0.20854700854700856" />
+        <entry key="..\:/diplomovka/allProjects/thesis/androidPart/app/src/main/res/layout/finish_record_item.xml" value="0.264" />
+        <entry key="..\:/diplomovka/allProjects/thesis/androidPart/app/src/main/res/layout/fragment_account_adding.xml" value="0.3396584440227704" />
+        <entry key="..\:/diplomovka/allProjects/thesis/androidPart/app/src/main/res/layout/fragment_acount_chooser.xml" value="0.22" />
+        <entry key="..\:/diplomovka/allProjects/thesis/androidPart/app/src/main/res/layout/fragment_active_competitions_dialog.xml" value="0.2" />
+        <entry key="..\:/diplomovka/allProjects/thesis/androidPart/app/src/main/res/layout/fragment_comp_approve_dialog.xml" value="0.2" />
+        <entry key="..\:/diplomovka/allProjects/thesis/androidPart/app/src/main/res/layout/fragment_comp_preview.xml" value="0.4" />
+        <entry key="..\:/diplomovka/allProjects/thesis/androidPart/app/src/main/res/layout/fragment_comp_summary.xml" value="0.264" />
+        <entry key="..\:/diplomovka/allProjects/thesis/androidPart/app/src/main/res/layout/fragment_competitors_list_dialog.xml" value="0.2" />
+        <entry key="..\:/diplomovka/allProjects/thesis/androidPart/app/src/main/res/layout/fragment_enc_key_setup.xml" value="0.25" />
+        <entry key="..\:/diplomovka/allProjects/thesis/androidPart/app/src/main/res/layout/fragment_first.xml" value="0.25416666666666665" />
+        <entry key="..\:/diplomovka/allProjects/thesis/androidPart/app/src/main/res/layout/fragment_login.xml" value="0.20854700854700856" />
+        <entry key="..\:/diplomovka/allProjects/thesis/androidPart/app/src/main/res/layout/fragment_nft_manager.xml" value="0.25" />
+        <entry key="..\:/diplomovka/allProjects/thesis/androidPart/app/src/main/res/layout/fragment_no_network_dialog.xml" value="0.17068466730954676" />
+        <entry key="..\:/diplomovka/allProjects/thesis/androidPart/app/src/main/res/layout/fragment_pick_competition.xml" value="0.21" />
+        <entry key="..\:/diplomovka/allProjects/thesis/androidPart/app/src/main/res/layout/fragment_pick_waypoints.xml" value="0.2" />
+        <entry key="..\:/diplomovka/allProjects/thesis/androidPart/app/src/main/res/layout/fragment_pick_waypoit_options.xml" value="0.264" />
+        <entry key="..\:/diplomovka/allProjects/thesis/androidPart/app/src/main/res/layout/fragment_prize_preview_dialog.xml" value="0.264" />
+        <entry key="..\:/diplomovka/allProjects/thesis/androidPart/app/src/main/res/layout/fragment_register.xml" value="0.2" />
+        <entry key="..\:/diplomovka/allProjects/thesis/androidPart/app/src/main/res/layout/fragment_result_detail.xml" value="0.264" />
+        <entry key="..\:/diplomovka/allProjects/thesis/androidPart/app/src/main/res/layout/fragment_results.xml" value="0.4" />
+        <entry key="..\:/diplomovka/allProjects/thesis/androidPart/app/src/main/res/layout/fragment_run_finish_dialogue.xml" value="0.2" />
+        <entry key="..\:/diplomovka/allProjects/thesis/androidPart/app/src/main/res/layout/fragment_run_quit_dialog.xml" value="0.2" />
+        <entry key="..\:/diplomovka/allProjects/thesis/androidPart/app/src/main/res/layout/fragment_the_run.xml" value="0.20854700854700856" />
+        <entry key="..\:/diplomovka/allProjects/thesis/androidPart/app/src/main/res/layout/fragment_way_points_map.xml" value="0.11837606837606837" />
+        <entry key="..\:/diplomovka/allProjects/thesis/androidPart/app/src/main/res/layout/fragment_waypoint_list_dialog.xml" value="0.20854700854700856" />
+        <entry key="..\:/diplomovka/allProjects/thesis/androidPart/app/src/main/res/layout/fragment_waypoint_mapview.xml" value="0.2" />
+        <entry key="..\:/diplomovka/allProjects/thesis/androidPart/app/src/main/res/layout/fragment_wrapping.xml" value="0.22" />
+        <entry key="..\:/diplomovka/allProjects/thesis/androidPart/app/src/main/res/layout/menu_row.xml" value="0.22" />
+        <entry key="..\:/diplomovka/allProjects/thesis/androidPart/app/src/main/res/layout/nft_image_layout.xml" value="0.17264957264957265" />
+        <entry key="..\:/diplomovka/allProjects/thesis/androidPart/app/src/main/res/layout/waypoint_desc_item.xml" value="0.5" />
+        <entry key="..\:/diplomovka/allProjects/thesis/androidPart/app/src/main/res/menu/menu_main.xml" value="0.20854700854700856" />
+        <entry key="..\:/diplomovka/allProjects/thesis/androidPart/app/src/main/res/menu/menu_row.xml" value="0.20854700854700856" />
+        <entry key="..\:/diplomovka/allProjects/thesis/androidPart/app/src/main/res/menu/pick_waypoint_menu.xml" value="0.18034188034188034" />
+        <entry key="..\:/diplomovka/allProjects/thesis/androidPart/app/src/main/res/menu/run_menu.xml" value="0.20854700854700856" />
+        <entry key="..\:/diplomovka/allProjects/thesis/androidPart/app/src/main/res/menu/waypoint_add_menu.xml" value="0.20854700854700856" />
+        <entry key="..\:/diplomovka/allProjects/thesis/androidPart/app/src/main/res/menu/wraping_menu.xml" value="0.20854700854700856" />
+        <entry key="..\:/diplomovka/allProjects/thesis/androidPart/app/src/main/res/mipmap-anydpi-v26/ic_spinner_custom.xml" value="0.2189873417721519" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.orienteering.nfts.nftToCompetition.PickWaypointsFragment"
+    >
+
+    <data>
+        <variable
+            name="pickWaypointsViewModel"
+            type="com.example.orienteering.nfts.nftToCompetition.PickWaypointsViewModel" />
+
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/black"
+
+        >
+
+        <LinearLayout
+            android:id="@+id/way_picker_header_linear"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_margin="5dp"
+            android:layout_weight="0.1"
+            android:background="@drawable/round_corners_drawable"
+            android:backgroundTint="@color/custom_gray">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+                <TextView
+                    android:id="@+id/way_picker_heading"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/way_picker_heading"
+                    android:textColor="@color/black"
+                    android:textSize="30sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/way_picker_continue"
+                    app:layout_constraintStart_toEndOf="@+id/way_picker_back_btn"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageButton
+                    android:id="@+id/way_picker_back_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="15dp"
+                    android:background="@color/transparent"
+                    android:src="@drawable/ic_arrow_circle_left"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageButton
+                    android:id="@+id/way_picker_continue"
+                    android:layout_width="40dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="20dp"
+                    android:background="@color/transparent"
+                    android:src="@drawable/ic_arrow_circle_right"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:background="@drawable/round_corners_workspace"
+            android:backgroundTint="@color/thistle"
+            android:layout_weight="0.9"
+            >
+
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+
+
+
+                <FrameLayout
+                    android:id="@+id/way_picker_google_map"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+
+                <androidx.appcompat.widget.SearchView
+                    android:id="@+id/municipality_search"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="11dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/round_corners_adress_background"
+                    android:backgroundTint="@color/thistle"
+                    android:backgroundTintMode="add"
+                    android:elevation="5dp"
+                    android:layout_margin="10dp"
+                    android:shadowColor="@color/thistle"
+                    app:iconifiedByDefault="false"
+                    app:queryHint="@string/comp_picker_search_hint">
+
+                </androidx.appcompat.widget.SearchView>
+
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginBottom="20dp"
+                    >
+
+
+                    <com.google.android.material.floatingactionbutton.FloatingActionButton
+                        android:id="@+id/floatingDelWaypointsBtn"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:textAlignment="center"
+                        android:backgroundTint="@color/transparent"
+                        android:clickable="true"
+                        android:shadowColor="@color/transparent"
+                        android:shadowRadius="0"
+                        app:maxImageSize="70dp"
+                        app:borderWidth="0dp"
+                        app:fabCustomSize="100dp"
+                        android:elevation="5dp"
+                        app:elevation="0dp"
+                        app:tint="@color/alert_red"
+                        android:src="@drawable/ic_delete_bin" />
+
+                </FrameLayout>
+
+
+            </RelativeLayout>
+
+
+
+        </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+    </LinearLayout>
+
+</layout>

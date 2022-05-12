@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="130dp"
+    android:orientation="horizontal"
+    android:background="@drawable/round_corners_drawable"
+    android:backgroundTint="@color/black"
+    >
+
+
+    <LinearLayout
+        android:id="@+id/way_desc_left"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="0.25"
+        android:orientation="vertical"
+        >
+
+
+        <LinearLayout
+            android:id="@+id/way_desc_top_left"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_margin="3dp"
+            android:layout_weight="0.5"
+            android:background="@drawable/round_corners"
+            android:backgroundTint="@color/white"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+
+            <TextView
+                android:id="@+id/way_desc_seq_num_textview"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/custom_marker_shape"
+                android:backgroundTint="@color/purple_700"
+                android:backgroundTintMode="add"
+                android:padding="3dp"
+                android:gravity="center"
+                android:text="12"
+                android:textColor="@color/white" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+
+
+
+
+
+    <LinearLayout
+        android:id="@+id/way_desc_right"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_weight="0.75"
+        android:background="@drawable/round_corners"
+        android:layout_margin="3dp"
+        >
+
+        <LinearLayout
+            android:id="@+id/way_desc_top_right"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.5"
+            android:orientation="horizontal"
+            android:background="@drawable/round_corners"
+            android:backgroundTint="@color/ligh_grey"
+            android:layout_marginBottom="1dp"
+            tools:ignore="NestedWeights"
+            android:gravity="center"
+            >
+
+
+            <TextView
+                android:id="@+id/way_des_item_thoroughfare"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/way_picker_options_address"
+                android:textColor="@color/black"
+                android:textSize="17sp"
+                android:textStyle="bold"
+
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/way_desc_bottom_right"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:orientation="horizontal"
+            android:background="@drawable/round_corners"
+            android:backgroundTint="@color/white"
+            android:layout_weight="0.5"
+            >
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+                <TextView
+                    android:id="@+id/way_desc_lat_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/dark_purple"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:text="@string/way_summary_comp_lat_label"
+                    app:layout_constraintBottom_toTopOf="@+id/way_desc_horizontal"
+                    app:layout_constraintEnd_toStartOf="@+id/way_desc_vertical"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/wa_desc_lng_lable"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/dark_purple"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:text="@string/way_summary_comp_lng_label"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/way_desc_vertical"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/way_desc_horizontal" />
+
+                <TextView
+                    android:id="@+id/way_desc_lat"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="051551544455.444"
+                    android:textColor="@color/black"
+                    android:textSize="15sp"
+                    android:textStyle="normal"
+                    app:layout_constraintBottom_toTopOf="@+id/way_desc_horizontal"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="@+id/way_desc_vertical"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/way_desc_vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintGuide_percent="0.2" />
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/way_desc_horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    app:layout_constraintGuide_percent="0.5" />
+
+                <TextView
+                    android:id="@+id/way_desc_lng"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0515151151."
+                    android:textColor="@color/black"
+                    android:textSize="15sp"
+                    android:textStyle="normal"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="@+id/way_desc_vertical"
+                    app:layout_constraintTop_toTopOf="@+id/way_desc_horizontal" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

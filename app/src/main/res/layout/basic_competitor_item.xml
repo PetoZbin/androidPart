@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="270dp"
+    android:layout_height="70dp"
+    android:orientation="horizontal"
+    android:background="@drawable/round_corners_drawable"
+    android:backgroundTint="@color/black"
+    >
+
+
+    <LinearLayout
+        android:id="@+id/way_desc_left"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="0.25"
+        android:orientation="vertical"
+        >
+
+
+        <LinearLayout
+            android:id="@+id/way_desc_top_left"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="3dp"
+            android:layout_weight="0.5"
+            android:background="@drawable/round_corners"
+            android:backgroundTint="@color/white"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+
+            <TextView
+                android:id="@+id/comp_list_seq_num_textview"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/custom_marker_shape"
+                android:backgroundTint="@color/purple_700"
+                android:backgroundTintMode="add"
+                android:padding="3dp"
+                android:gravity="center"
+                android:text="12"
+                android:textColor="@color/white" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/way_desc_right"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_weight="0.75"
+        android:background="@drawable/round_corners"
+        android:layout_margin="3dp"
+        >
+
+
+        <LinearLayout
+            android:id="@+id/way_desc_bottom_right"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:background="@drawable/round_corners"
+            android:backgroundTint="@color/white"
+            >
+
+
+                <TextView
+                    android:id="@+id/comp_list_username"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="username long long long long long"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="@+id/way_desc_vertical"
+                    app:layout_constraintTop_toTopOf="@+id/way_desc_horizontal" />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

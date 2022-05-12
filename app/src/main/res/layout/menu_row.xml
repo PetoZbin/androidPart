@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/menu_row_relative_layout"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    style="@android:style/Widget.ActionButton"
+    android:orientation="horizontal"
+    android:clickable="true"
+    >
+
+    <ImageView
+
+        android:id="@+id/menu_row_img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_logout" />
+
+    <TextView
+        android:id="@+id/menu_row_text"
+        android:layout_marginLeft="10dp"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/wrap_menu_Logout" />
+
+</LinearLayout>

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.orienteering.competition.pickCompetition.PickCompetitionFragment"
+    >
+
+    <data>
+        <variable
+            name="pickCompetitionViewmodel"
+            type="com.example.orienteering.competition.pickCompetition.PickCompetitionViewmodel" />
+
+    </data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/thistle"
+
+        >
+            <!--            <fragment-->
+            <!--                android:id="@+id/way_picker_google_map"-->
+            <!--                android:layout_width="match_parent"-->
+            <!--                android:layout_height="match_parent"-->
+            <!--                android:name="com.google.android.gms.maps.SupportMapFragment"/>-->
+
+
+        <FrameLayout
+            android:id="@+id/comp_picker_google_map"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <androidx.appcompat.widget.SearchView
+            android:id="@+id/municipality_search"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/round_corners_adress_background"
+            android:backgroundTint="@color/thistle"
+            android:backgroundTintMode="add"
+            android:shadowColor="@color/thistle"
+            android:layout_margin="10dp"
+            android:elevation="5dp"
+            app:iconifiedByDefault="false"
+            app:queryHint="@string/comp_picker_search_hint"
+            >
+
+
+        </androidx.appcompat.widget.SearchView>
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="20dp"
+            >
+
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/floatingCenterButton"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:textAlignment="center"
+                android:backgroundTint="@color/transparent"
+                android:clickable="true"
+                android:shadowColor="@color/transparent"
+                android:shadowRadius="0"
+                app:maxImageSize="70dp"
+                app:borderWidth="0dp"
+                app:fabCustomSize="100dp"
+                android:elevation="5dp"
+                app:elevation="0dp"
+                app:tint="@color/indicator_orange"
+                android:src="@drawable/ic_center_location" />
+
+        </FrameLayout>
+
+    </RelativeLayout>
+
+</layout>
